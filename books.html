@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfiqi-Gate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+<div class="container">
+<div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+      <li><a href="about.html" id="about">About</a></li>
+      <li><a href="achievement.html" id="achieve">The achievements</a></li>
+      <li><a href="books.html" id="books">Favorite books</a></li>
+      <li><a href="videos.html" id="videos">Favorite videos</a></li>
+    </ul>
+  </div>
+   <button class="button" id="arabic">Arabic</button>
+   <button class="button" id="english">English</button>
+    <h1 class="caption" id="title">Browse the best books</h1>
+    <ul class="currencies">
+      <li class="currency" id="USD">
+	<img src="assets/img/book1.jpg" alt="The art and secrets of decision making" />
+	<a href="https://drive.google.com/file/d/1LXtl7qoOLMCW1k9YhLca_cc07gb3wbT_/view?usp=sharing" id="book1">The art and secrets of decision making</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book2.jpg" alt="The power of thinking" />
+	<a href="https://drive.google.com/file/d/1bwHmmC3QqyY73KGum31eeqSpnDjM8SDT/view?usp=sharing" id="book2">The power of thinking</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book3.jpg" alt="NLP" />
+	<a href="https://drive.google.com/file/d/10VokPZj1vIQ3i5qMI7UQnRj_ot3HypTy/view?usp=sharing" id="book3">NLP</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book4.jpg" alt="strategic marketing secrets" />
+	<a href="https://drive.google.com/file/d/1LmcqET17r48nHo-gSes1qIjeoP_u4yI6/view?usp=sharing" id="book4">strategic marketing secrets</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book5.jpeg" alt="The ten keys to success book" />
+	<a href="https://drive.google.com/file/d/1vmhV4a0tnvPBpRy6b0KNUEdTXsmfTa6D/view?usp=sharing" id="book5">the ten keys to success</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book6.jpg" alt="The power of self-control" />
+	<a href="https://drive.google.com/file/d/1dN7p6U-N-SvhpVdK4BRsiKXbDhzr-6WE/view?usp=sharing" id="book6">The power of self-control</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book7.jpg" alt="Awaken your potential and create your future" />
+	<a href="https://drive.google.com/file/d/17xzkOTBR7UOulB5yi6abGzZMBP4GpjY7/view?usp=sharing" id="book7">Awaken your potential and create your future</a>
+      </li>
+      <li class="currency" id="USD">
+	<img src="assets/img/book8.jpg" alt="take control of your life" />
+	<a href="https://drive.google.com/file/d/1XbP7Gxw-Efu9891p_IwXI8rk7C1k2JB-/view?usp=sharing" id="book8">take control of your life</a>
+      </li>
+   </ul>
+    <button class="add-currency-btn" id="add-currency-btn"><i class='bx bx-chevron-right'></i><h3 id="findBook">Find your favorite book</h3></button>
+    <ul class="add-currency-list">
+	<div class="left" style="background-color:#bbb;">
+    <h2 id="list">List</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="https://drive.google.com/file/d/17xzkOTBR7UOulB5yi6abGzZMBP4GpjY7/view?usp=sharing" id="item1">Awaken your potential and create your future</a></li>
+      <li><a href="https://drive.google.com/file/d/1XbP7Gxw-Efu9891p_IwXI8rk7C1k2JB-/view?usp=sharing" id="item2">take control of your life</a></li>
+      <li><a href="https://drive.google.com/file/d/1dN7p6U-N-SvhpVdK4BRsiKXbDhzr-6WE/view?usp=sharing" id="item3">The power of self-control</a></li>
+      <li><a href="https://drive.google.com/file/d/1vmhV4a0tnvPBpRy6b0KNUEdTXsmfTa6D/view?usp=sharing" id="item4">the ten keys to success</a></li>
+      <li><a href="https://drive.google.com/file/d/1LmcqET17r48nHo-gSes1qIjeoP_u4yI6/view?usp=sharing" id="item5">strategic marketing secrets</a></li>
+      <li><a href="https://drive.google.com/file/d/10VokPZj1vIQ3i5qMI7UQnRj_ot3HypTy/view?usp=sharing" id="item6">NLP</a></li>
+      <li><a href="https://drive.google.com/file/d/1bwHmmC3QqyY73KGum31eeqSpnDjM8SDT/view?usp=sharing" id="item7">The power of thinking</a></li>
+      <li><a href="https://drive.google.com/file/d/1LXtl7qoOLMCW1k9YhLca_cc07gb3wbT_/view?usp=sharing" id="item8">The art and secrets of decision making</a></li>
+    </ul>
+  </div>
+   </ul>
+  </div>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/languageBooks.js"></script>
+</body>
+</html>

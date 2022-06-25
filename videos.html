@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfiqi-Gate</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+<div class="container">
+<div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+      <li><a href="about.html" id="about">About</a></li>
+      <li><a href="achievement.html" id="achieve">The achievements</a></li>
+      <li><a href="books.html" id="books">Favorite books</a></li>
+      <li><a href="videos.html" id="videos">Favorite videos</a></li>
+    </ul>
+  </div>
+   <button class="button" id="arabic">Arabic</button>
+   <button class="button" id="english">English</button>
+    <h1 class="caption" id="title">Browse the best videos</h1>
+    <ul class="currencies" id="currencies">
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/NgGod5uZhM4">
+	  <img src="assets/video/vd1.png" alt="The art and secrets of decision making" />
+	</a>
+	<p id="book1">The art and secrets of decision making</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/tvCw0Vre-Ug">
+	  <img src="assets/video/vd2.png" alt="The power of thinking" />
+	</a>
+	<p id="book2">The power of thinking</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/v6KDRLMlMbk">
+	  <img src="assets/video/vd3.png" alt="NLP" />
+	</a>
+	<p id="book3">NLP</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/hpILEL7-MTo">
+	  <img src="assets/video/vd4.png" alt="strategic marketing secrets" />
+	</a>
+	<p id="book4">strategic marketing secrets</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/fmPTf8fsAes">
+	  <img src="assets/video/vd5.png" alt="The ten keys to success book" />
+	</a>
+	<p id="book5">the ten keys to success</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/xuIl_YICiXk">
+	  <img src="assets/video/vd6.png" alt="The power of self-control" />
+	</a>
+	<p id="book6">The power of self-control</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/XBnOxWlD9eA">
+	  <img src="assets/video/vd7.png" alt="Awaken your potential and create your future" />
+	</a>
+	<p id="book7">Awaken your potential and create your future</p>
+      </li>
+      <li class="currency" id="USD">
+	<a href="https://youtu.be/RZLQYsZxOFU">
+	  <img src="assets/video/vd8.png" alt="take control of your life" />
+	</a>
+	<p id="book8">take control of your life</p>
+      </li>
+   </ul>
+    <button class="add-currency-btn" id="add-currency-btn"><i class='bx bx-chevron-right'></i><h3 id="findBook">Find your favorite book</h3></button>
+    <ul class="add-currency-list">
+	<div class="left" style="background-color:#bbb;">
+    <h2 id="list">List</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="https://youtu.be/XBnOxWlD9eA" id="item1">Awaken your potential and create your future</a></li>
+      <li><a href="https://youtu.be/RZLQYsZxOFU" id="item2">take control of your life</a></li>
+      <li><a href="https://youtu.be/xuIl_YICiXk" id="item3">The power of self-control</a></li>
+      <li><a href="https://youtu.be/fmPTf8fsAes" id="item4">the ten keys to success</a></li>
+      <li><a href="https://youtu.be/hpILEL7-MTo" id="item5">strategic marketing secrets</a></li>
+      <li><a href="https://youtu.be/v6KDRLMlMbk" id="item6">NLP</a></li>
+      <li><a href="https://youtu.be/tvCw0Vre-Ug" id="item7">The power of thinking</a></li>
+      <li><a href="https://youtu.be/NgGod5uZhM4" id="item8">The art and secrets of decision making</a></li>
+    </ul>
+  </div>
+   </ul>
+  </div>
+<script src="assets/js/custom.js"></script>
+<script src="assets/js/languageVideos.js"></script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+  background-color: #505562;
+  color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+}
+.container {
+  width: 500px;
+  margin: 20px auto;
+  user-select: none;
+  overflow: hidden;
+  position: relative;
+}
+i.fa.fa-home {
+    font-family: 'FontAwesome';
+    font-size: 45px;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 40vw;
+    box-shadow: none;
+    background-color: #00b386;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.button {
+    background-color: #00b386;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin: 6px;
+    border-radius: 5px;
+    padding: 2px;
+    float: left;
+}
+h1.caption {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #2d2d37;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+#sidebarMenu {
+    position: absolute;
+    width: 250px;
+    margin-top: 0px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #00b386 0%, #2d2d37 100%);
+    z-index: 100;
+    display: none;
+    overflow: hidden;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li:hover {
+    background-color: #2d2d37;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+    display: block;
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+ul.currencies {
+    height: calc(100vh - 40px - 100px - 40px - 58px);
+    background-color: #222;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    overflow-y: auto;
+}
+ul.currencies li {
+    background-color: #2d2d37;
+    border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1rem 1.75rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+li#USD a img {
+    width: 100%;
+}
+li#USD p {
+    text-align: center;
+}
+ul.currencies li a {
+  color: #2196f3;
+    text-decoration: none;
+}
+ul.currencies li:last-child {
+  margin-bottom: 0;
+}
+ul.currencies li.base-currency {
+  background-color: #264d73;
+}
+.flag {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #fff;
+  vertical-align: top;
+}
+.info {
+  display: inline-block;
+  width: 78%;
+}
+.info .input span {
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 4rem;
+  text-align: center;
+}
+.info .input input {
+  font-size: 1.5rem;
+  width: 78%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.info .currency-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: 4rem;
+}
+.info .base-currency-rate {
+  font-size: 0.8rem;
+  margin-left: 4rem;
+}
+ul.currencies li .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+ul.currencies li .close:hover {
+  color: #fff;
+}
+
+/* Scrollbar */
+ul.currencies::-webkit-scrollbar {
+  width: 5px;
+}
+ul.currencies::-webkit-scrollbar-thumb {
+  background-color: #2d2d37;
+  border-bottom: 1rem solid #222;
+}
+
+.add-currency-list {
+    position: absolute;
+    bottom: 54px;
+    left: 105%;
+    height: 84vh;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100%;
+    overflow-y: auto;
+    transition: all 0.25s;
+}
+.add-currency-list ul li {
+  list-style: none;
+  padding: 0.75rem;
+  border-bottom: 1px solid #ddd;
+}
+.add-currency-list ul li {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.add-currency-btn {
+    background-color: #00b386;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-top: 3px solid #222;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    position: relative;
+    z-index: 100000000000000000;
+}
+.add-currency-btn i {
+    position: absolute;
+    top: 0.6rem;
+    left: 40px;
+    font-size: 2rem;
+    transition: all 0.25s;
+}
+button#add-currency-btn:hover i {
+      transform: rotate(180deg);
+}
+.add-currency-btn.open {
+  background-color: #d9534f;
+}
+.add-currency-btn.open i {
+  opacity: 1;
+  left: 1.25rem;
+}
+.add-currency-btn.open + ul.add-currency-list {
+  left: 0;
+}
+.add-currency-btn.open + ul.add-currency-list li:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .container { width: 100%; margin: 0 auto; }
+  ul.currencies { height: calc(100vh - 83px - 34px - 51px); }
+  .header h1 { font-size: 2rem; }
+  .flag { width: 3rem; height: 2rem; }
+  .info .input span { font-size: 1.25rem; width: 3.5rem; }
+  .info .input input { font-size: 1.25rem; width: 76%;}
+  .info .currency-name { margin-left: 3.5rem; }
+  .info .base-currency-rate { margin-left: 3.5rem; }
+  ul.add-currency-list { bottom: 48px; height: calc(100vh - 80px - 51px); }
+  .add-currency-btn i { left: 25%; top:0.65rem; }
+}
